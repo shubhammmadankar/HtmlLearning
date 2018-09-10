@@ -5,42 +5,53 @@
 </title>
 <style>
 ul{  
+        position: fixed;
         text-align: center;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        height: 80px;
+        height: 45px;
         width: 1500px;
         background-color: lawngreen;
         font-size: 30px;
-        text-decoration:limegreen;
-       
+        display: inline-block;
+        min-width: 160px;
+        padding-top: 18px;
 }
 a{
         text-decoration: none;
 }
 
-li{
+li {
         
         display: inline;
 
 }
-ul:hover{
+li :hover,.productdropdown:hover .dropbtn{
        
-         color: white;
-}
-
-#dropdown{
+        background-color:red;
       
 }
-table{
-        display: none;
-        background-color: lawngreen;
-        widows: 100px;
-        height: 200px;
+.tablecontent{
+  
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.drop:hover table{
-        display: inline;
+.tablecontent tr {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+tr  :hover{
+        background-color: brown;
+}
+.productdropdown:hover .tablecontent {
+        display: block;
 
 }
 
@@ -49,16 +60,18 @@ table{
     <body>
 
 
-            <ul>
+        <ul>
                     <li><a href="#home">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                     <li><a href="#about">ABOUT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                    <li><a href="#product">PRODUCT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li class="productdropdown"><a href = "javascript:void(0)"class ="dropbtn">PRODUCT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                     <li><a href="#news">NEWS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                     <li><a href="#contact">CONTACT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                     <li><a href="#about">ABOUT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                  </ul>
+         </ul>
+                  <br> <br> <br> <br> <br>
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+<div style="font-size: 20px">
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
         It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -131,7 +144,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
         sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
         Aldus PageMaker including versions of Lorem Ipsum.
-<div>
+        </div>
+<div class="tablecontent">
+
 <table>
         <tr>
                 <td>one</td>
@@ -143,12 +158,15 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 <td>three</td>
          </tr>
          <tr>
-                <td>gour</td>
+                <td>four</td>
         </tr>
         <tr>
                  <td>five</td>
         </tr>
 </table>
 </div>
+
+
+
         </body>
         </html>
