@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>transition and transfer property
+
+</title>
+<style>
+div{
+    display: block;
+    background-color: red;
+    padding-top: 200px;
+    padding-left: 160px;
+    color: white;
+    height:200px;
+    width:200px;
+    transition: width 2s;
+}
+
+div:hover {
+    width: 645px;
+}
+p{
+    position: relative;
+    left:800px;
+    top:-440px;
+    padding-top: 200px;
+    padding-left: 160px;
+    display: block;
+    background-color:black;
+    color: white;
+    height:200px;
+    width:200px;
+    transition: width 2s, height 2s,transform 2s;
+}
+p:hover {
+    height: 500px;
+    
+}
+h1{
+    position: relative;
+    top:-440px;
+    padding-top: 200px;
+    padding-left: 160px;
+    display: block;
+    background-color:blue;
+    color: white;
+    height:200px;
+    width:200px;
+    transition: width 2s, height 2s,transform 2s;
+}
+h1:hover{
+    width: 300px;
+    height: 500px;
+    transform: rotate(180deg);
+}
+h2{
+    position: relative;
+    left:800px;
+    top:-880px;
+    padding-top: 200px;
+    padding-left: 160px;
+    display: block;
+    background-color:green;
+    color: white;
+    height:200px;
+    width:200px;
+    transition: background color 7s;
+}
+h2:hover{
+    background-color:red;
+
+}    
+</style>
+</head>
+
+<body>
+<div>width transform </div><br>
+<p>height transfer</p>
+<h1>rotation</h1>
+<h2>color</h2>
+
+
+
+    </body>
+    </html>
