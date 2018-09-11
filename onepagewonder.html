@@ -6,71 +6,95 @@
 </title>
 <style>
 body{
-    height: 1000px;
-    background-image:linear-gradient(green, blue);
-
+    height: 700px;
+    background-image:linear-gradient(green,rgb(24, 24, 226));
+z-index: 1;
 }     
 #grad1 {
-    border-radius: 8000px 8000px 8000px 8000px;
+
+    border-radius: 0px 600px 0px 0px;
     background: blue;
     padding: 0px; 
-    width: 1600px;
-    height: 1600px; 
+    width: 600px;
+    height: 600px; 
     position: relative;
-    left:-1000px;
+    left:-150px;
+    top:30px;
+    z-index: -1;
    }
 #grad2 {
-    border-radius: 200px 200px 200px 200px;
+   
+    border-radius: 260px 260px 260px 260px;
     background-image: linear-gradient(blue,green);
-    width: 400px;
-    height: 400px; 
+    width: 520px;
+    height: 520px; 
     position: absolute;
     top:-120px;
-    left:500px;    
+    left:440px; 
+    z-index: -1;   
     }
-#grad4 {
-    border-radius: 200px 200px 200px 200px;
-    background-image: linear-gradient(red);
-    width: 400px;
-    height: 400px; 
+#grad3{
+    
+    border-radius: 0px 0px 0px 500px;
+    background:green;
+    padding: 0px; 
+    width: 500px;
+    height: 500px; 
     position: absolute;
-    top:-10px;
-    left:600px;       
+    right:0px;
+    top:0px;
+    z-index: -1;
+    }
+#grad4{
+    border-radius: 160px 160px 0px 0px;
+    background:blue;
+    padding: 0px; 
+    width: 160px;
+    height: 100px; 
+    position: absolute;
+    right:200px;
+    top:609px;
     }
 h1{
+    font-family:Arial;
     display: inline;
-    font-size: 85px;
+    font-size: 100px;
     color:white;
     position: absolute;
-    left:400px;
-    top:200px;
+    left:310px;
+    top:160px;
 }
    
 span{
+    
+    font-family:Arial;
     color: white;
     display: inline;
     font-size: 65px;
     color:white;
     position: relative;
-    left:600px;
+    left:580px;
     top:350px;
 }      
 p{
+    
+    font-family:Arial;
     font-size: 25px;
     color: white;
     display: inline;
     color:white;
     position: relative;
-    left:400px;
+    left:350px;
     top:390px;
 
 }
 #box{
    
+    font-family:Arial;
     padding-top: 13px;
     padding-left: 28px;
     position: relative;
-    left:670px;
+    left:580px;
     top:450px;
     background-color: blue;
     color: white;
@@ -79,8 +103,8 @@ p{
 }
  #box{
     display: inline;
-    left: 250px;
-    border-radius: 15px 15px 15px 15px;
+    left: 180px;
+    border-radius: 30px 30px 30px 30px;
     background-color: blue;
     padding: 20px; 
     color: black;
@@ -93,19 +117,32 @@ a{
 a:hover{
     background-color: red;
 }
+.carpool{
+    opacity: .5;
+    position: fixed;
+    text-align: left;
+    background-color: black;
+    color:white;
+    height: 45px;
+    width: 1600px;
+    display: inline-block;
+    min-width: 160px;
+    padding-top: 18px;
+
+}
 </style>
 </head>
 
 <body>
-
-
-
+<div class="carpool">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCARPOOL</div>
 <h1>One Page Wonder</h1>
 <span>Share ride</span>
 <p>Make buddies</p>
 <div id="box"><a href="#">LEARN MORE</div>
 <div id="grad1"></div>
 <div id="grad2"></div>
+<div id="grad3"></div>
 <div id="grad4"></div>
 </body>
 </html>
