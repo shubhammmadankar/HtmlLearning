@@ -1,0 +1,36 @@
+.firstpage{
+    width:1500px;
+    height: 750px;
+    background-color:blueviolet;
+    color: white;
+}
+#wedding{
+
+    font-family:Edwardian Script ITC;
+    position: relative;
+    top:40px;
+    left:190px;
+    font-size:45px;
+    color:white;
+    }
+a{
+    text-decoration: none;
+    color:white;
+}
+h1{
+    font-family:Edwardian Script ITC;
+    font-size: 90px;
+    position: absolute;
+    top:180px;
+    left:200px;
+}
+
+h2{
+    position:relative;
+    top:200px;
+    left:450px;
+}
+ul{
+    display:inline;
+}
+
