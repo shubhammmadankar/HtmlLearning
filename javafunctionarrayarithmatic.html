@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>java script function  array arithmatic operation
+</title>
+
+</head>
+<body>
+<script>
+let a=prompt('enter 1st number');
+let b=prompt('enter 2nd number');
+let x=[];
+x[0]=function()
+    {
+        let sum =parseInt(a)+parseInt(b);
+        document.write('sum of two number is '+ sum +"<br></br>" );
+    }
+  
+  
+  x[1]=function()
+    {
+        let sub =parseInt(a)-parseInt(b);
+        document.write('sub of two number is '+ sub +"<br></br>");
+    }
+  
+
+  x[2]=function()
+    {
+        let mul =parseInt(a)*parseInt(b);
+        document.write('mul of two number is '+ mul +"<br></br>");
+    }
+
+  x[3]=function()
+    {
+        let div =parseInt(a)/parseInt(b);
+        document.write('div of two number is '+ div +"<br></br>");
+    }
+ 
+    x[4]=function()
+    {
+        let mod =parseInt(a)%parseInt(b);
+        document.write('mod of two number is '+ mod +"<br></br>");
+    }
+    x[5]=function()
+    {
+        let squre =parseInt(a)*parseInt(a);
+        document.write('squre of first number is '+ squre +"<br></br>");
+    }
+    x[6]=function()
+    {
+        let cube =parseInt(a)*parseInt(a)*parseInt(a);
+        document.write('cube of first number is '+ cube +"<br></br>");
+    }
+    for(i=0;i<x.length;i++){
+        x[i]();
+    }
+     
+ 
+ 
+
+
+
+</script>
+</body>
+</html>
