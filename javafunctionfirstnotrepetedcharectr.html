@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>java script for first not repeted charecter
+</title>
+
+</head>
+<body>
+<script>
+let a=prompt('enter the string to be cheack');
+let count=0;
+let z='not repeted letter';
+for(i=0;i=a.length;i++)
+{
+    count=0
+        for(j=0;j=a.length;j++)
+        {
+            if(a[i]===a[j])
+                {
+                    count+=1;
+                }
+           
+        }
+         if(count<2)
+            {
+                 z=a[i]
+                break;  
+            }   
+}
+document.write('the letter is not repeting is'+z);
+
+
+
+
+</script>
+</body>
+</html>
