@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>java script forb most frequent element of array
+    </title>
+
+</head>
+
+<body>
+    <script>
+        var arr = prompt("enter elements: ");
+        var count = 0;
+        var count2 = 1;
+        for (i = 0; i < arr.length; i++) {
+            for (j = i; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++
+                }
+                if (count2 < count) {
+                    count2 = count;
+                    var item = arr[i];
+                }
+                count = 0;
+            }
+        }
+        document.write("most repeted element" + item + "<br>")
+
+        document.write("number of repitation" + count)
+    </script>
+</body>
+
+</html>

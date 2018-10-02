@@ -7,18 +7,16 @@
 </head>
 <body>
 <script>
-let color=prompt["enter the number"];
+let a=["1","2","3","6","4","9","4","6"];
 
-for(i=0;i<color;i++)
+for(i=0;i<=a.length;i++)
 {
     
-    if(color[i]%2==0)
+    if(a[i]%2==0 && a[i+1]%2==0)
     {
-        if(color[i+1]%2==0)
-        {
-      
-            document.write(color);
-        }
+       
+          
+          document.write(a[i]+"-");
     }
 }
 </script>
