@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>java script for stopwatch
+</title>
+
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <p><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="miliseconds">00</span></p>
+    <button id="button-start">Start</button>
+    <button id="button-stop">Stop</button>
+    <button id="button-reset">Reset</button>
+    </div> 
+    
+    
+<script>
+  window.onload = function () {
+    var minutes = 00;
+    var seconds = 00; 
+    var miliseconds = 00; 
+  var aMinutes = document.getElementById("minutes")
+  var aSeconds = document.getElementById("seconds")
+  var aMiliSeconds = document.getElementById("miliseconds")
+  var buttonStart = document.getElementById('button-start');
+  var buttonStop = document.getElementById('button-stop');
+  var buttonReset = document.getElementById('button-reset');
+  var Interval ;
+
+  buttonStart.onclick = function() {
+    
+     clearInterval(Interval);
+     Interval = setInterval(startTimer, 10);
+  }
+  
+    buttonStop.onclick = function() {
+       clearInterval(Interval);
+  }
+  
+
+  buttonReset.onclick = function() {
+     clearInterval(Interval);
+    minutes = "00";
+  	seconds = "00";
+    miliseconds = "00";
+    aMinutes.innerHTML = minutes;
+  	aSeconds.innerHTML = seconds;
+    aMiliSeconds.innerHTML = miliseconds;
+  }
+  
+   
+  
+  function startTimer () {
+    miliseconds++; 
+    
+    if(miliseconds < 100){
+      aMiliSeconds.innerHTML =  miliseconds;
+    }
+    
+    if (miliseconds > 100){
+      aMiliSeconds.innerHTML = miliseconds;
+      
+    } 
+    
+    if (miliseconds > 100) {
+      console.log("seconds");
+      seconds++;
+      aSeconds.innerHTML =  seconds;
+      miliseconds = 0;
+      aMiliSeconds.innerHTML =  0;
+    }
+    
+    if (seconds >60){
+      aSeconds.innerHTML = seconds;
+    }
+    if (seconds > 60){
+        console.log("miniutes");
+        minutes++;
+      aMinutes.innerHTML = minutes;
+      seconds=0;
+      aSeconds.innerHTML =  0;
+
+  }
+  
+}
+}
+</script>
+</body>
+</html>
