@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>java script for puzzle add 24
+    </title>
+<style>
+#id {
+background-color: black;
+color: white;
+text-align: center;
+height: 100px;
+}
+
+</style>
+</head>
+
+
+<body>
+<p id="id"> shubham  </p>
+<button type="button" onclick="colorChange()">change color</button>
+<script>
+var a=document.getElementById("id");
+
+function colorChange(){
+
+        
+var b=[Math.floor(Math.random()*1000)];
+
+a.style.backgroundColor= '#' +b;
+
+ setInterval(colorChange ,1000)
+
+}
+
+</script>
+</body>
+
+</html>
