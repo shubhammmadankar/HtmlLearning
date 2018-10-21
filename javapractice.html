@@ -7,13 +7,23 @@
 <body>
 
 
-<p id ="shubham">shubham is changed</p>
-<button type="button"
-onclick="document.getElementById('shubham').style.fontSize='35px'">Click Me!</button>
 
 
+<p id=shubham></p>
+<script>
+document.getElementById(shubham).innerHTML=f1();
+function f1(){
+ var a=prompt("enter the number")
+ if(a%2==0){
+     document.write("number is even")
+ }
+     else{
+        document.write("number is not even") 
+     
+ }
+}
 
-
+</script>
 
 </body>
 </html>

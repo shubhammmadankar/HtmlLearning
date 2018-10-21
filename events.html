@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>java script for palindrom
+</title>
+
+
+<button onmouseover="document.getElementById('1').innerHTML=Date()">mouse on me</button><br>
+<p id="1"></p>
+
+<button onclick="document.getElementById('2').innerHTML=Date()">click for time</button><br>
+<p id="2"></p>
+
+<button onmouseout="document.getElementById('3').innerHTML=Date()">remove courser from me</button><br>
+<p id="3"></p>
+
+<button onkeydown="document.getElementById('4').innerHTML=Date()">click and then press key down </button><br>
+<p id="4"></p>
+
+enter any key<input type="text" onkeypress="f1()">
+
+
+<p ondblclick="f2()">Double-click .</p>
+<p id="5"></p>
+<script>
+function f1() {
+  document.write(Date())
+}
+function f2() {
+    document.getElementById('5').innerHTML =Date();
+}
+</script>
+
+
+
+</head>
+<body>
+<script>
