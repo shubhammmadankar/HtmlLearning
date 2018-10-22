@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>java script for fibonacci 
+</title>
+click for fibonacci series<br>
+<button type="button" onclick="fibonacci()">click</button>
+
+<script>
+function fibonacci(){
+
+var i;
+var fib = [];
+
+fib[0] = 0;
+fib[1] = 1;
+for (i = 2; i <= 10; i++) {
+  fib[i] = fib[i - 2] + fib[i - 1];
+  document.write (fib[i]);
+  
+}
+}
+</script>
+
+
+</head>
+<body>
+<script>
+    
+

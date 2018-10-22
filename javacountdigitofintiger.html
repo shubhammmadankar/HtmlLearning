@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>java script for pythagorean
+    </title>
+
+    <script>
+
+        function digits_count(n) {
+            var count = 0;
+            if (n >= 1)++count;
+
+            while (n / 10 >= 1) {
+                n /= 10;
+                ++count;
+            }
+
+            document.write(count);
+        }
+        digits_count(12345654321)
+    </script>
+
+
+</head>
+
+<body>
+    <script>
