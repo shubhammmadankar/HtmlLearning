@@ -10,12 +10,32 @@ email.id<input type ="text" id="1">
 
 function validate(){
     var x=document.getElementById('1').value
-    var arry=[];
-    for(i=0;i<arry.length;i++){
-    if(x[i]!=='@'){
-    alert("please enter gmail only")
+    var at,dot,len
+    at=x.indexOf("@");
+    dot=x.indexOf(".");
+    len=x.length;
+    var Domain=dot-at;
+    if(at==-1){
+    alert("please enter @ ");
+}
+else if(dot==-1){
+    alert("please enter .");
 }
 
+
+ else if(Domain>4 && Domain<8)
+{
+
+var last=(len-dot)-1;
+if(last==3 || last==2){
+   
+    alert("valid email");
+}
+
+
+else{
+    alert("Invalid email");
+}
 }
 }
 </script>

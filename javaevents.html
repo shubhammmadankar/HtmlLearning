@@ -20,14 +20,22 @@
 enter any key<input type="text" onkeypress="f1()">
 
 
-<p ondblclick="f2()">Double-click .</p>
-<p id="5"></p>
+<p ondblclick="f2()">Double-click on me .</p>
+
+
+
+
+enter key in box <input type="text" onkeypress="f3()">
+
 <script>
 function f1() {
   document.write(Date())
 }
 function f2() {
-    document.getElementById('5').innerHTML =Date();
+    document.write(Date());
+}
+function f3() {
+    alert("You pressed a key inside the input field");
 }
 </script>
 
