@@ -6,26 +6,30 @@
     </title>
     <script src="jquery\jquery.js"></script>
 </head>
+
 <body>
 
-    <p id="1">1</p>
-    <p id="2">2</p>
-    <p id="3">3</p>
+    <p id="1">click for magic</p>
+    <p id="2">again</p>
+    <p id="3">reset the magic</p>
     <script>
-$(document).ready(function(){
-    $("#1").click(function(){
-        $("#2").hide();
-    
-    })
-    $("#3").click(function(){
-        $("#2").show();
-})
-})
+        $(document).ready(function () {
+            $("#1").click(function () {
+                $(this).hide();
+
+            })
+            $("#2").click(function () {
+                $(this).hide();
+            })
+            $("#3").click(function () {
+                $("p").show();
+            })
+        })
 
     </script>
 
 
 
 
-<body>
-    <script>
+    <body>
+        <script>

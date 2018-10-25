@@ -4,25 +4,35 @@
 <head>
     <title>java script for roman numral to intger
     </title>
+</head>
+<body>
 
     <script>
-var x=prompt("enter number in roman");
+var arr=prompt("enter number in roman");
 
- var I=1;
-var V=5;
-var X=10;
-var y=x.split("")
-
+var sum=ctoi(arr.charAt(0));
+var first,next;
  
-for(i=0;i<x.length;i++){
- var sum=x.charAt(i)+x.charAt(i-1);
+for(j=0;j<arr.length;j++){
+first = ctoi(arr.charAt(j));
+next = ctoi(arr.charAt(j-1));
+if(first<=next){
+    sum +=first;
+}
+else{
+   var sum=sum-next*2+first;
+}
+}
+
     document.write(sum)
 
+function ctoi(c){
+    switch(c){
+    case 'i': return 1;
+    case 'v': return 5;
+    case 'x': return 10;
+    }
 }
     </script>
-
-
-</head>
-
-<body>
-    <script>
+</body>
+</html>

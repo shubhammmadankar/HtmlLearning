@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="jquery\jquery.js"></script>
+</head>
+    <body> 
+        <button> start</button>
+    <p style ="background-color: red;height: 100px;width:100px ;
+    border-radius: 50px 50px 50px 50px; position: absolute">make me big</p>
+     <span style ="background-color:blue;height: 100px;width:100px ;
+     border-radius: 50px 50px 50px 50px; position: absolute; left:500px;top:47px"></span>
+ <p>thank u for making me big</p>
+
+ <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+             $("p").animate({
+                 left:'250px',
+                 height:'250px',
+                 width:'250px'
+                 });
+            $("p").animate({
+                 left:'500px',
+                 height:'100px',
+                 width:'100px'
+                 });
+            $("p").animate({
+                 left:'250px',
+                 height:'250px',
+                 width:'250px'
+                 });
+            $("p").animate({
+                 left:'0px',
+                 height:'100px',
+                 width:'100px'
+
+            })
+
+                  $("span").animate({
+                 left:'250px',
+                 height:'250px',
+                 width:'250px'
+                 });
+            $("span").animate({
+                 left:'00px',
+                 height:'100px',
+                 width:'100px'
+                 });
+            $("span").animate({
+                 left:'250px',
+                 height:'250px',
+                 width:'250px'
+                 });
+            $("span").animate({
+                 left:'500px',
+                 height:'100px',
+                 width:'100px'
+                 });
+            }) 
+            })
+</script>
+  
+   
+    </body>
+    </html>
