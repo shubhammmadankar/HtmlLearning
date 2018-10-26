@@ -13,17 +13,19 @@
            It was popularised in the 1960s with the release of Letraset sheets containing 
            Lorem Ipsum passages,<b>to you</b> and more recently with desktop publishing software 
            like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p1>click on this line for heighten the above bold charecter</p1>
 
 
-
-
-
-    <p1>click on this line for heighten the above bold charecter</p1>
 <script>
     $(document).ready(function(){
-        $("p1").click(function(){
+        $("p1").mouseenter(function(){
           $("b").css({
              backgroundColor:'red' 
+          })
+        })
+        $("p1").mouseleave(function(){
+          $("b").css({
+             backgroundColor:'initial' 
           })
         })
     })

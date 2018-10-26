@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery\jquery.js"></script>
+    </head>
+<body>
+        <h1>shubham</h1>
+        <h2>madankar</h2>
+        <h3 class="red">madankar</h3>
+        <h4 class="red">madankar</h4>
+        <p>first para</p>
+        <p>second para.</p>
+        
+        <div>text in div element</div><br>
+        
+        <button>Add classes to elements</button>
+        <button id="button2">Remove classes to elements</button2>
+        <style>
+                .important {
+                    font-weight: bold;
+                    font-size: xx-large;
+                }
+                
+                .blue {
+                    color: blue;
+                }
+                .red {
+                    color:red;
+                }
+                </style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("h1, h2, p").addClass("blue");
+        $("div").addClass("important");
+    });
+    $("#button2").click(function(){
+        $("h3, h4").removeClass("red");
+    });
+});
+</script>
+    
+</body>    
+</html>

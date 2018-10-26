@@ -12,26 +12,26 @@
     <script>
         $(document).ready(function () {
             $("button").click(function () {
-               $("1").fadeIn();
-               $("2").fadeIn();
-               $("3").fadeIn();
-       // })
-
+               $("#1").fadeIn();
+               $("#2").fadeIn("slow");
+               $("#3").fadeIn(3000);
+        })
+})
       //  $("button").click(function () {
         //        $("ul li:first").hide();
         //})
       //  $("button").click(function () {
        //         $("ul li:first-child").hide();
-       })
-        
-        })
+       
        
     </script>
  <button type ="onclick=">click me</button>
-<div id="1" style="width:90px ; height:90px;background-color: red;"></div>
-<div id="2" style="width:90px ; height:90px;background-color:green;"></div>
-<div id="3" style="width:90px ; height:90px;background-color:blue;"></div>
+<div id="1" style="width:90px ; height:90px;display: none; background-color:orangered;"></div>
+<div id="2" style="width:90px ; height:90px;display: none;background-color:white;"></div>
+<div id="3" style="width:90px ; height:90px;display: none;background-color:green;"></div>
 
 
-    <body>
-        <script>
+    
+   
+ </body>
+ </html>

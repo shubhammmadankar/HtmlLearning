@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery\jquery.js"></script>
+    </head>
+<body>
+        <button id="btn1">append Text</button>
+        <button id="btn2">prepend text</button>
+        <button id="btn4">before</button>
+        <button id="btn3">after</button>
+        
+        <button id="btn5">remove</button>
+        <button id="btn6">empty</button>
+       <br> <p>shubham madankar .</p>
+       <div id="div1"> <b>iam going to wanish by clicking on remove button<br>
+        iam also</b><br>
+        im also but not when empty
+       </div>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("p").append("from nawargaon:");
+    });
+    $("#btn2").click(function(){
+        $("p").prepend("Mr.");
+    });
+    $("#btn3").click(function(){
+        $("p").after("good morning");
+    });
+    $("#btn4").click(function(){
+        $("p").before("hi");
+    });
+    $("#btn5").click(function(){
+        $("b").remove();
+    })
+    $("button6").click(function(){
+       $("#div1").empty();
+})
+})
+</script>
+    
+</body>    
+</html>
