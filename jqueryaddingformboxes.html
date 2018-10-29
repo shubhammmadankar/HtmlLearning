@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body> list for skills
+    <ol>
+        <li><input type="text"> </li>
+        <li><input type="text"> </li>
+        <li><input type="text"> </li>
+    </ol>
+    <button id="button1">add extra box</button>
+    <button id="button2">remove box</button>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("ol").append('<li><input type="text" ></li>');
+
+            });
+            $("#button2").click(function () {
+                $("li").remove();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -6,20 +6,17 @@
 <body>
         <h1>shubham</h1>
         <h2>madankar</h2>
-        <h3 class="red">madankar</h3>
-        <h4 class="red">madankar</h4>
+       
         <p>first para</p>
         <p>second para.</p>
         
         <div>text in div element</div><br>
-        
+         <h3 class="red">madankar</h3>
+        <h4 class="red">madan</h4>
         <button>Add classes to elements</button>
-        <button id="button2">Remove classes to elements</button2>
+        <button id="button2">Remove classes to elements</button>
         <style>
-                .important {
-                    font-weight: bold;
-                    font-size: xx-large;
-                }
+                
                 
                 .blue {
                     color: blue;
@@ -31,11 +28,11 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $("h1, h2, p").addClass("blue");
-        $("div").addClass("important");
+        $("h1, h2, p").toggleClass("blue");
+    
     });
     $("#button2").click(function(){
-        $("h3, h4").removeClass("red");
+        $("h3, p").removeClass("red");
     });
 });
 </script>

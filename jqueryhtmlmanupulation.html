@@ -12,9 +12,13 @@
         <button id="btn5">remove</button>
         <button id="btn6">empty</button>
        <br> <p>shubham madankar .</p>
-       <div id="div1"> <b>iam going to wanish by clicking on remove button<br>
-        iam also</b><br>
-        im also but not when empty
+       <b>iam going to wanish by clicking on remove button</b>
+           <br>
+       <div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+         im also but not when empty
+        <span>iam also</span>
+        whats up
+        
        </div>
 <script>
 $(document).ready(function(){
@@ -33,7 +37,7 @@ $(document).ready(function(){
     $("#btn5").click(function(){
         $("b").remove();
     })
-    $("button6").click(function(){
+    $("#btn6").click(function(){
        $("#div1").empty();
 })
 })
