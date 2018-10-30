@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <table style="width:500px">
+        <tr>
+            <th>name</th>
+            <th>sirname</th>
+        </tr>
+        <tr>
+            <td>shubham</td>
+            <td>madankar</td>
+        </tr>
+        <tr>
+            <td>chetan</td>
+            <td>bawne</td>
+        </tr>
+        <tr>
+            <td>vijay</td>
+            <td>kinhekar</td>
+        </tr>
+        <tr>
+            <td>mahesh</td>
+            <td>tonge</td>
+        </tr>
+        <tr>
+            <td>gaurav</td>
+            <td>kamdi</td>
+        </tr>
+    </table>
+    <br>
+    <button>click for even </button>
+    <table style="width: 500px;">
+    <tr>
+            <th>name</th>
+            <th>sirname</th>
+        </tr>
+        <tr>
+            <td>shubham</td>
+            <td>madankar</td>
+        </tr>
+        <tr>
+            <td>chetan</td>
+            <td>bawne</td>
+        </tr>
+        <tr>
+            <td>vijay</td>
+            <td>kinhekar</td>
+        </tr>
+        <tr>
+            <td>mahesh</td>
+            <td>tonge</td>
+        </tr>
+        <tr>
+            <td>gaurav</td>
+            <td>kamdi</td>
+        </tr>
+    </table>
+    <button id="button2">click for odd </button>
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+         $("tr:even").css("background-color", "yellow");
+    })
+    $("#button2").click(function(){
+        $("tr:odd").css("background-color", "red");
+});
+});
+    </script>
+
+</body>
+
+</html>

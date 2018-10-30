@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body>
+<table>
+
+   
+ <script>
+
+    </script>
+
+</body>
+
+  </html>

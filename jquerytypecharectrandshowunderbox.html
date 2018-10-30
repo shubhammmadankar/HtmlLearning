@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body>
+    name<input type="text" id="1" value="">
+    <p>Keypresses: <span></span></p>
+    <script>
+$(document).ready(function(){
+    $("input").keypress(function(){
+        $("span").html( $("#1") .val());
+    });
+});
+
+    </script>
+
+</body>
+
+</html>
