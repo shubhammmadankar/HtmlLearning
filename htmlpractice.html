@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        </head>
-        <body>
-            <p id="1"></p>
-            <script>
-         var arr=["a","b","c","d","e"];
-         arr.push("shubham");
-         document.write(arr)
-                
-           
-            </script>
-            </body>
-            </html>
+
+<head>
+</head>
+
+<body style="background-color: aqua ">
+    <p style="color:red ; font-size: 90px;background-color: green;text-align: center">SHUBHAM &nbsp MADANKAR</p>
+    <p style="color:green;width:300px; font-size:20px">contact number:-<span style="color: black">9552190998</span></p>
+    <p style="position: relative;top:-50px; text-align: right; color: green;font-size: 20px">email id:-<span style="color: black">Shubhammadankar95@gmail.com</span></p>
+
+</body>
+<script>
+    function evenodd() {
+        var x = prompt('enter the no');
+        if (x % 2 == 0) {
+            document.write(x + " is even")
+        }
+        else {
+            document.write(x + " is not even")
+        }
+    }
+
+    function sum() {
+        var firstnum = prompt('enter first number')
+        var secondnum = prompt('enter second number')
+        var sum = parseInt(firstnum) + parseInt(secondnum);
+        document.write("sum is" + "&nbsp" + sum)
+    }
+    function diff() {
+        var firstnum = prompt('enter first number')
+        var secondnum = prompt('enter second number')
+        var diff = parseInt(firstnum) - parseInt(secondnum);
+        document.write("diff is" + "&nbsp" + diff)
+    }
+    function mul() {
+        var firstnum = prompt('enter first number')
+        var secondnum = prompt('enter second number')
+        var mul = parseInt(firstnum) * parseInt(secondnum);
+        document.write("multiplication is" + "&nbsp" + mul)
+    }
+
+    function div() {
+        var firstnum = prompt('enter first number')
+        var secondnum = prompt('enter second number')
+        var div = parseInt(firstnum) / parseInt(secondnum);
+        document.write("division is" + "&nbsp" + div)
+    }
+    function Fibonacci(){
+    var a=0,b=1,c,i=prompt('last');
+document.write("Fibonacci");
+while(b<=i){
+document.write(c);
+document.write("<br/>");
+c=a+b;
+a=b;
+b=c;
+}
+}
+
+
+</script>
+
+
+<button style="width:200px" onclick=" evenodd()">even odd function</button><br>
+<button style="width:200px" onclick=" sum()">sum </button><br>
+<button style="width:200px" onclick=" diff()">difrence</button><br>
+<button style="width:200px" onclick=" mul()">multiplication</button><br>
+<button style="width:200px" onclick=" div()">division</button><br>
+<button style="width:200px" onclick="Fibonacci()">Fibonacci</button><br>
+<h2>Copy text from different field</h2>
+<p>
+<input type="text" style="color: #FF0080;background-color: #C9C299" id="field1" value="Good Morning">
+<input type="text" style="color: #FF0080;background-color: #C9C299" id="field2">
+<button style="background-color: #E799A3" onclick="document.getElementById('field2').value = document.getElementById('field1').value">Click to Copy Text
+</p>
+</html>

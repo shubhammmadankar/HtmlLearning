@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+
+
+    <script>
+        var d, data;
+        d = document.getElementById("demo");
+        window.onload = function () {
+            var http = new XMLHttpRequest();
+            http.open("get","https://learnwebcode.github.io/json-example/animals-1.json");
+            http.send();
+            http.onreadystatechange = function () {
+                data = JSON.parse(http.responseText)
+                data.forEach(item => { d.innerHTML = d.innerHTML + item.userId + "title is :" + item.title + "<br>" })
+
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

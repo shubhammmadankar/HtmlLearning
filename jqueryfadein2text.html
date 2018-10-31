@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body>
+    <p>shubham madankar</p>
+    <div>from nawargaon</div>
+
+    
+   
+    <script>
+        var a = function(){
+    $(document).ready(function(){
+   
+         $("p").fadeOut();
+         $("div").fadeIn();
+    })
+}
+    var b = function(){
+    $(document).ready(function(){
+  $("p").fadeIn();
+         $("div").fadeOut();
+         
+    })
+}
+setInterval(a,1000);
+setInterval(b,1001);
+    </script>
+
+</body>
+
+</html>
