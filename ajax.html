@@ -16,7 +16,7 @@
         d = document.getElementById("demo");
         window.onload = function () {
             var http = new XMLHttpRequest();
-            http.open("get","https://learnwebcode.github.io/json-example/animals-1.json");
+            http.open("get","https://jsonplaceholder.typicode.com/posts");
             http.send();
             http.onreadystatechange = function () {
                 data = JSON.parse(http.responseText)

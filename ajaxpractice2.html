@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery\jquery.js"></script>
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+<button id="btn">featch info</button>
+
+    <script>
+    
+      
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function () {
+                console.log(http.response);
+            }
+            http.open("GET","https://jsonplaceholder.typicode.com/posts",true);
+            http.send();
+
+                // data.forEach(item => { d.innerHTML = d.innerHTML + item.userId + "title is :" + item.title + "<br>" })
+
+            // }
+    
+
+
+    </script>
+
+</body>
+
+</html>
