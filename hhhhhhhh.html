@@ -23,7 +23,7 @@
             width: 200px;
             height: 40px;
             background-color: red;
-            opacity: .6;
+
             line-height: 40px;
             font-size: 30px;
             margin-right: 20px;
@@ -47,19 +47,23 @@
         ul li:hover ul li {
             display: block;
         }
+
         ul li ul li a {
             text-decoration: none;
             display: block;
         }
-        ul li ul li ul li{
+
+        ul li ul li ul li {
             display: none;
-            position: absolute;
+            position: relative;
             left: 200px;
-            top:0px;
+            top: -35px;
 
         }
-        ul li ul li:hover ul li {
+
+        ul li ul li :hover ul li {
             display: block;
+            background-color: orange;
         }
     </style>
 
@@ -71,15 +75,14 @@
                 <li><a>our work</a></li>
                 <li><a>us</a>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
                     </ul>
                 </li>
             </ul>
-        <li><a>carier</a>
-
         </li>
+        <li><a>carier</a></li>
         <li><a>contact</a></li>
 
 
