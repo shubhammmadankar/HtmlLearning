@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>practice</title>
+</head>
+
+<body id="body">
+    <div class="jumbotron text-center">
+
+
+        <label>select color</label>
+        <select onchange="changeBackground(this)">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+
+        </select>
+
+    </div>
+
+    <script>
+        function changeBackground(x) {
+
+            var body = document.getElementById("body")
+            body.style.backgroundColor = x.value;
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>
