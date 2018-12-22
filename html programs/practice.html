@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #container ul {
+            list-style: none;
+        }
+
+        #container ul li,
+        a {
+            background-color: black;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid white;
+            color: white;
+            float: left;
+            text-align: center;
+            position: relative;
+            text-decoration: none;
+        }
+
+        #container ul :hover {
+            background-color: red;
+        }
+
+        #container ul ul {
+            display: none;
+        }
+
+        #container ul li:hover>ul {
+            display: block;
+        }
+
+        #container ul ul ul {
+            margin-left: 200px;
+            top: 0px;
+            position: absolute;
+        }
+
+        .line {
+            border-right: 2px solid black;
+            height:500px;
+            position: absolute;
+            margin-left:-50px;
+          
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GOALS</a>
+                <ul>
+                    <li><a href="#">OUR PROJECT</a> </li>
+                    <li><a href="#">OUR SEMINOR</a>
+                        <ul>
+                            <li><a href="#">ROBOTICS</a></li>
+                            <li><a href="#">REPEBERYPI</a></li>
+                            <li><a href="#">ARTIFICIAL INTELIGENCE</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">OUR DEPARTMENT</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CARRIER</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">UPLOD RESUME</a></li>
+
+
+        </ul>
+    </div>
+
+
+    <div class="line"></div>
+</body>
+
+</html>
