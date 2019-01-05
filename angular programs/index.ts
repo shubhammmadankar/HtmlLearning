@@ -1,17 +1,16 @@
-var factorial:number = 1;
-var num: number;
-var function1 = (a: number) => {
+let i:any;
+
+var x= function (a: number)
+{
 
 
-   for (let i=0;i<a;i++){
-     if(i%2==0){
-      console.log("number is prime")  
+ 
+     if( a%2==0){
+      console.log("is prime")  
      }
      else{
-        console.log("no is not prime")
+        console.log("is not prime")
      }
 
    }
-}
-
-function1(9)
+x(13)

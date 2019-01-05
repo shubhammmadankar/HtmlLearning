@@ -1,13 +1,10 @@
-var factorial = 1;
-var num;
-var function1 = function (a) {
-    for (var i = 0; i < a; i++) {
-        if (i % 2 == 0) {
-            console.log("number is prime");
-        }
-        else {
-            console.log("no is not prime");
-        }
+var i;
+var x = function (a) {
+    if (a % 2 == 0) {
+        console.log("is prime");
+    }
+    else {
+        console.log("is not prime");
     }
 };
-function1(10);
+x(13);
